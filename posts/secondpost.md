@@ -1,5 +1,5 @@
 ---
-title: This is my second post.
+title: My second post
 description: This is a post on My Blog about leveraging agile frameworks.
 date: 2019-07-04
 tags:

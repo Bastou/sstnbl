@@ -1,5 +1,12 @@
+# 11ty
 _site/
+
+# NPM
 node_modules/
 package-lock.json
+.pnp
+.pnp.js
+yarn-error.log
+
+# OS
 .DS_Store
-yarn.lock

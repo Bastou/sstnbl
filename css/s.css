@@ -10,7 +10,7 @@ body {
   padding: 3.3em 1.6em;
   max-width: 64ch;
   font: 20px/1.6 sans-serif;
-  background: #e0dac8;
+  background: #f5eedc;
 }
 body,
 a {
@@ -21,10 +21,16 @@ a {
 a:focus,
 a:hover {
   background: #222;
-  color: #e0dac8;
+  color: #f5eedc;
 }
 .s {
   font-size: 0.8em;
+}
+h1 {
+  margin: 0 0 0.6em;
+}
+h1 > a {
+  text-decoration: none;
 }
 h2 {
   font: 1.3em/1.3 sans-serif;
@@ -38,7 +44,7 @@ main > * {
 img {
   width: 100%;
 }
-h1, h2, h3 {
+h2, h3 {
   margin: 1.5em 0 1.3rem;
 }
 .p {
@@ -60,4 +66,10 @@ h1, h2, h3 {
 }
 .k {
   padding: 0 5px;
+}
+.mid {
+  vertical-align: middle;
+}
+.sm {
+  font-size: smaller;
 }

@@ -1,5 +1,5 @@
 ---
-title: This is my first post.
+title: My first post
 description: This is a post on My Blog about agile frameworks.
 date: 2020-01-01
 tags:

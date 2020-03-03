@@ -1,5 +1,6 @@
 {
   "title": "stnbl",
+  "shortTitle": "stnbl",
   "url": "https://stnbl.github.com/",
   "description": "Ultra Lightweight & Sustainable web starter base on 11ty that aim to reduce the website footprint from the start.",
   "feed": {

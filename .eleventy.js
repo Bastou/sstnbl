@@ -3,6 +3,7 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginPWA = require("eleventy-plugin-pwa");
 
 /**
  * Eleventy config
@@ -16,6 +17,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginPWA);
 
   // Use deep merge for arrays and object for perfs
   eleventyConfig.setDataDeepMerge(true);
@@ -74,6 +76,6 @@ module.exports = function(eleventyConfig) {
   // configuration options for eleventy builder
   return {
     htmlTemplateEngine: "njk",
-    templateFormats: ["md", "njk", "html", "liquid"]
+    templateFormats: ["md", "njk", "html", "liquid", "json"]
   };
 };

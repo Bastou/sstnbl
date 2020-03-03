@@ -1,4 +1,4 @@
-# eleventy-base-blog
+# stnbl
 
 [WIP] A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 Ultra Lightweight starter for helping build a more sustainable website and reduce its footprint. It's based on [11ty](https://github.com/11ty/eleventy).
@@ -63,7 +63,7 @@ npm run debug
 * Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.html` and `about/index.md`.
 * Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`.
 * Because `css` and `png` are listed in `templateFormats` but are not supported templatez types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
-* The the feed template is in `feed/feed.html`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
+* The the feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
 * This example uses three layouts:
   * `_includes/layouts/base.html`: the top level HTML structure
   * `_includes/layouts/home.html`: the home page template (wrapped into `base.html`)
@@ -72,17 +72,16 @@ npm run debug
 
 ### TODOS
 
-- [] Add css
+- [x] Add css
 - [] Add js with pwa
 - [] https://rollupjs.org/guide/en/
 - [] Test feature phone
 - [] Add image manager responsive size & lazy load
 - [] Add page size budget management
 - [] https://web.dev/codelab-adapt-video-to-image-serving-based-on-network-quality/
-- [] Ajouter image peinture "Storm King on the Hudson, 1866, Samuel Colman"
+- [] Add html minifier : https://www.11ty.dev/docs/config/#transforms-example-minify-html-output
 - [] Add sustainable web checklist:
   - From checklist : [https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf](https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf)
   - Checker like [https://www.websitecarbon.com/](https://www.websitecarbon.com/)
   - Test energy impact with safari : [https://www.wholegraindigital.com/blog/website-energy-efficiency/](https://www.wholegraindigital.com/blog/website-energy-efficiency/)
   - Mobile First logic
-
