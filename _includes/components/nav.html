@@ -1,0 +1,6 @@
+{# Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+{% macro default(pages, currentPage, showDate) %}
+  {%- for entry in pages %}
+  <li><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+  {%- endfor %}
+{% endmacro %}

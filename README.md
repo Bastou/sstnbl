@@ -1,34 +1,28 @@
 # eleventy-base-blog
 
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+[WIP] A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+Ultra Lightweight starter for helping build a more sustainable website and reduce its footprint. It's based on [11ty](https://github.com/11ty/eleventy).
 
-[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
+Note: It's mainly an experiment in minimalism, the goal os to provide just enough code to make a static website working. You need to adjust some things first before launching to production.
 
-## Demos
+## Demo
 
-* [Netlify](https://eleventy-base-blog.netlify.com/)
-* [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
+* [GitHub Pages](https://bastou.github.io/stnbl/)
 
-## Deploy this to your own site
-
-These builders are amazing—try them out to get your own Eleventy site in a few clicks!
-
-* [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-* [Get your own Eleventy web site on ZEIT Now](https://zeit.co/new/project?template=11ty/eleventy-base-blog)
 
 ## Getting Started
 
 ### 1. Clone this Repository
 
 ```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+git clone https://github.com/11ty/eleventy-base-blog.git my-website
 ```
 
 
 ### 2. Navigate to the directory
 
 ```
-cd my-blog-name
+cd my-website
 ```
 
 Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
@@ -44,22 +38,22 @@ npm install
 ### 5. Run Eleventy
 
 ```
-npx eleventy
+npm i -g eleventy
 ```
 
 Or build and host locally for local development
 ```
-npx eleventy --serve
+npm run serve
 ```
 
 Or build automatically when a template changes:
 ```
-npx eleventy --watch
+npm run watch
 ```
 
 Or in debug mode:
 ```
-DEBUG=* npx eleventy
+npm run debug
 ```
 
 ### Implementation Notes
@@ -68,10 +62,27 @@ DEBUG=* npx eleventy
 * `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
 * Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.html` and `about/index.md`.
 * Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`.
-	* Because `css` and `png` are listed in `templateFormats` but are not supported template types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
-* The blog post feed template is in `feed/feed.html`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
+* Because `css` and `png` are listed in `templateFormats` but are not supported templatez types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
+* The the feed template is in `feed/feed.html`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
 * This example uses three layouts:
   * `_includes/layouts/base.html`: the top level HTML structure
   * `_includes/layouts/home.html`: the home page template (wrapped into `base.html`)
   * `_includes/layouts/post.html`: the blog post template (wrapped into `base.html`)
 * `_includes/postlist.html` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.html` has an example of how to use it.
+
+### TODOS
+
+- [] Add css
+- [] Add js with pwa
+- [] https://rollupjs.org/guide/en/
+- [] Test feature phone
+- [] Add image manager responsive size & lazy load
+- [] Add page size budget management
+- [] https://web.dev/codelab-adapt-video-to-image-serving-based-on-network-quality/
+- [] Ajouter image peinture "Storm King on the Hudson, 1866, Samuel Colman"
+- [] Add sustainable web checklist:
+  - From checklist : [https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf](https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf)
+  - Checker like [https://www.websitecarbon.com/](https://www.websitecarbon.com/)
+  - Test energy impact with safari : [https://www.wholegraindigital.com/blog/website-energy-efficiency/](https://www.wholegraindigital.com/blog/website-energy-efficiency/)
+  - Mobile First logic
+

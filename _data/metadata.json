@@ -1,12 +1,12 @@
 {
-  "title": "rspsbl",
-  "url": "https://rspbl.github.com/",
-  "description": "Responsible web starter base on 11ty that aim to reduce your website footprint",
+  "title": "stnbl",
+  "url": "https://stnbl.github.com/",
+  "description": "Ultra Lightweight & Sustainable web starter base on 11ty that aim to reduce the website footprint from the start.",
   "feed": {
-    "subtitle": "Responsible web starter base on 11ty that aim to reduce your website footprint.",
+    "subtitle": "Ultra Lightweight & Sustainable web starter base on 11ty that aim to reduce the website footprint from the start.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://rspbl.github.com/"
+    "id": "https://stnbl.github.com/"
   },
   "author": {
     "name": "Bastien Cornier",
