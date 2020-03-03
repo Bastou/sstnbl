@@ -1,0 +1,15 @@
+{
+  "title": "rspsbl",
+  "url": "https://rspbl.github.com/",
+  "description": "Responsible web starter base on 11ty that aim to reduce your website footprint",
+  "feed": {
+    "subtitle": "Responsible web starter base on 11ty that aim to reduce your website footprint.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://rspbl.github.com/"
+  },
+  "author": {
+    "name": "Bastien Cornier",
+    "email": "bastien.cornier@gmail.com"
+  }
+}
