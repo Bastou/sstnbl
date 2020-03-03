@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   // Add layouts for posts
-  eleventyConfig.addLayoutAlias("post", "layouts/post.html");
+  eleventyConfig.addLayoutAlias("post", "./src/layouts/post.html");
 
   //
   // FILTERS
@@ -45,37 +45,39 @@ module.exports = function(eleventyConfig) {
     if (n < 0) {
       return array.slice(n);
     }
-
     return array.slice(0, n);
   });
 
   // Add collection for tags
-  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+  eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList"));
 
-  // define non-template static content directories for faster builds
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  // define non-template static content directories to copy directly (for faster builds)
+  eleventyConfig.addPassthroughCopy("./src/img");
+  eleventyConfig.addPassthroughCopy("./src/css");
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
+    files: ["dist/js"],
     callbacks: {
       ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync("_site/404.html");
-
+        const content_404 = fs.readFileSync("dist/404.html");
+        console.log("process");
         browserSync.addMiddleware("*", (req, res) => {
           // Provides the 404 content without redirect.
           res.write(content_404);
           res.end();
         });
       }
-    },
-    ui: false,
-    ghostMode: false
+    }
   });
 
   // configuration options for eleventy builder
   return {
     htmlTemplateEngine: "njk",
-    templateFormats: ["md", "njk", "html", "liquid", "json"]
+    templateFormats: ["md", "njk", "html", "liquid", "json"],
+    dir: {
+      input: "src",
+      output: "dist"
+    }
   };
 };
