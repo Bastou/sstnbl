@@ -1,7 +1,6 @@
 # stnbl
 
-[WIP] A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
-Ultra Lightweight starter for helping build a more sustainable website and reduce its footprint. It's based on [11ty](https://github.com/11ty/eleventy).
+[WIP] Ultra Lightweight starter for helping build a more sustainable website and reduce its footprint. It's based on [11ty](https://github.com/11ty/eleventy).
 
 Note: It's mainly an experiment in minimalism, the goal os to provide just enough code to make a static website working. You need to adjust some things first before launching to production.
 
@@ -73,14 +72,14 @@ npm run debug
 ### TODOS
 
 - [x] Add css
-- [] Add js with pwa
-- [] https://rollupjs.org/guide/en/
-- [] Test feature phone
-- [] Add image manager responsive size & lazy load
-- [] Add page size budget management
-- [] https://web.dev/codelab-adapt-video-to-image-serving-based-on-network-quality/
-- [] Add html minifier : https://www.11ty.dev/docs/config/#transforms-example-minify-html-output
-- [] Add sustainable web checklist:
+- [ ] Add js with pwa
+- [ ] https://rollupjs.org/guide/en/
+- [ ] Test feature phone
+- [ ] Add image manager responsive size & lazy load
+- [ ] Add page size budget management
+- [ ] https://web.dev/codelab-adapt-video-to-image-serving-based-on-network-quality/
+- [ ] Add html minifier : https://www.11ty.dev/docs/config/#transforms-example-minify-html-output
+- [ ] Add sustainable web checklist:
   - From checklist : [https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf](https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf)
   - Checker like [https://www.websitecarbon.com/](https://www.websitecarbon.com/)
   - Test energy impact with safari : [https://www.wholegraindigital.com/blog/website-energy-efficiency/](https://www.wholegraindigital.com/blog/website-energy-efficiency/)
