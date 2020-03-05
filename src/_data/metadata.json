@@ -1,13 +1,13 @@
 {
-  "title": "stnbl",
-  "shortTitle": "stnbl",
-  "url": "https://stnbl.github.com/",
+  "title": "sstnbl",
+  "shortTitle": "sstnbl",
+  "url": "https://sstnbl.bastiencornier.com/",
   "description": "Ultra Lightweight & Sustainable web starter base on 11ty that aim to reduce the website footprint from the start.",
   "feed": {
     "subtitle": "Ultra Lightweight & Sustainable web starter base on 11ty that aim to reduce the website footprint from the start.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://stnbl.github.com/"
+    "id": "https://sstnbl.bastiencornier.com/"
   },
   "author": {
     "name": "Bastien Cornier",

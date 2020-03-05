@@ -6,13 +6,14 @@ tags:
   - tag-1
 layout: layouts/post.html
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+We all share and use the web, just as we all share and live on this planet. This manifesto is a public declaration of a shared commitment to create a sustainable internet.
 
-## Section Header
+## We need a sustainable internet
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+The planet is experiencing unprecedented climate change and the Internet is both part of the problem and the solution. From websites to cryptocurrencies, the Internet consumes large amounts of electricity in data centres, telecoms networks, and end user devices. If the Internet was a country, it would be the 6th largest polluter in the world and is expected to grow considerably by 2030.
+
+If we embrace sustainability in our work, we can create a web that is good for people and planet. By signing this manifesto you declare your commitment to create a greener web.
 
 ```javascript
 var text = "2-3"

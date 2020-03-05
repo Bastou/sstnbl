@@ -1,4 +1,4 @@
-# stnbl
+# sstnbl
 
 [WIP] Ultra Lightweight starter for helping build a more sustainable website and reduce its footprint. It's based on [11ty](https://github.com/11ty/eleventy).
 
@@ -6,7 +6,7 @@ Note: It's mainly an experiment in minimalism, the goal os to provide just enoug
 
 ## Demo
 
-* [GitHub Pages](https://bastou.github.io/stnbl/)
+* [Page](https://sstnbl.bastiencornier.com)
 
 
 ## Getting Started
@@ -72,9 +72,8 @@ npm run debug
 ### TODOS
 
 - [x] Add css
-- [ ] Add js with pwa
-- [ ] https://rollupjs.org/guide/en/
-- [ ] Test feature phone
+- [x] Add js with pwa
+- [x] Test feature phone
 - [ ] Add image manager responsive size & lazy load
 - [ ] Add page size budget management
 - [ ] https://web.dev/codelab-adapt-video-to-image-serving-based-on-network-quality/

@@ -1,5 +1,5 @@
 {
-    "name": "stnbl",
+    "name": "sstnbl",
     "version": "0.1.0",
     "description": "Tiny & sustainable web starter base on 11ty that focus on reducing footprint as mauch as possible.",
     "scripts": {
@@ -7,7 +7,7 @@
         "js:iifebuild": "BABEL_ENV=iife rollup --config",
         "js:build": "npm run js:esmbuild && npm run js:iifebuild",
         "js:watch": "BABEL_ENV=esm rollup --config --watch",
-        "build": "eleventy & js:watch",
+        "build": "eleventy && yarn js:build",
         "watch": "eleventy --watch",
         "serve": "eleventy --serve",
         "start": "concurrently \"yarn js:watch\"  \"yarn serve\"",

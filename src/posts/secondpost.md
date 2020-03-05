@@ -6,12 +6,12 @@ tags:
   - tag-2
 layout: layouts/post.html
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+The majority of the world's man-made carbon emissions are released by the burning fossil fuels to create electricity, heat or motion.
+
+This means that it will almost certainly be impossible to reduce greenhouse gas concentrations to sustainable levels unless large quantities of low-carbon energy can be brought on-stream to substitute for fossil fuels.
 
 ## Section Header
 
 <a href="{{ '/posts/firstpost/' | url }}">First post</a>
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+The two main sources of low-carbon energy are renewables – which includes categories such as solar, wind, hydro, biomass and marine energy – and nuclear. In terms of total primary energy supply (i.e. raw energy created), data for 2008 suggest that fossil fuels provided around 85%, nuclear contributed around 2% and renewables provided around 13%.
