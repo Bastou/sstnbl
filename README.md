@@ -55,6 +55,10 @@ Or in debug mode:
 npm run debug
 ```
 
+### Sustainable web checklist
+
+* [Checklist](src/sustainable-checklist.md)
+
 ### Implementation Notes
 
 * `about/index.md` shows how to add a content page.
@@ -69,17 +73,14 @@ npm run debug
   * `_includes/layouts/post.html`: the blog post template (wrapped into `base.html`)
 * `_includes/postlist.html` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.html` has an example of how to use it.
 
+
+
 ### TODOS
 
 - [x] Add css
 - [x] Add js with pwa
 - [x] Test feature phone
-- [ ] Add image manager responsive size & lazy load
 - [ ] Add page size budget management
 - [ ] https://web.dev/codelab-adapt-video-to-image-serving-based-on-network-quality/
 - [ ] Add html minifier : https://www.11ty.dev/docs/config/#transforms-example-minify-html-output
-- [ ] Add sustainable web checklist:
-  - From checklist : [https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf](https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf)
-  - Checker like [https://www.websitecarbon.com/](https://www.websitecarbon.com/)
-  - Test energy impact with safari : [https://www.wholegraindigital.com/blog/website-energy-efficiency/](https://www.wholegraindigital.com/blog/website-energy-efficiency/)
-  - Mobile First logic
+

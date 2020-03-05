@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-style: normal;
-  list-style: none;
 }
 body {
   margin: 0 auto;
@@ -22,6 +21,9 @@ a:focus,
 a:hover {
   background: #222;
   color: #f5eedc;
+}
+.lsn {
+  list-style: none;
 }
 .s {
   font-size: 0.8em;
