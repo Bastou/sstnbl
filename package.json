@@ -1,46 +1,47 @@
 {
-    "name": "sstnbl",
-    "version": "0.1.0",
-    "description": "Tiny & sustainable web starter base on 11ty that focus on reducing footprint as mauch as possible.",
-    "scripts": {
-        "js:esmbuild": "BABEL_ENV=esm rollup --config",
-        "js:iifebuild": "BABEL_ENV=iife rollup --config",
-        "js:build": "npm run js:esmbuild && npm run js:iifebuild",
-        "js:watch": "BABEL_ENV=esm rollup --config --watch",
-        "build": "eleventy && yarn js:build",
-        "watch": "eleventy --watch",
-        "serve": "eleventy --serve",
-        "start": "concurrently \"yarn js:watch\"  \"yarn serve\"",
-        "debug": "DEBUG=* eleventy"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Bastou/stnbl"
-    },
-    "author": {
-        "name": "Bastien Cornier",
-        "email": "bastiencornier@gmail.com",
-        "url": "https://bastiencornier.com/"
-    },
-    "bugs": {
-        "url": "https://github.com/Bastou/stnbl/issues"
-    },
-    "homepage": "https://github.com/Bastou/stnbl#readme",
-    "devDependencies": {
-        "@11ty/eleventy": "^0.10.0",
-        "@11ty/eleventy-navigation": "^0.1.3",
-        "@11ty/eleventy-plugin-rss": "^1.0.7",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-        "@babel/core": "^7.8.6",
-        "@babel/preset-env": "^7.8.6",
-        "concurrently": "^5.1.0",
-        "eleventy-plugin-pwa": "^1.0.8",
-        "luxon": "^1.21.3",
-        "markdown-it": "^8.4.2",
-        "rollup": "^1.32.0",
-        "rollup-plugin-babel": "^4.3.3",
-        "rollup-plugin-commonjs": "^10.1.0",
-        "rollup-plugin-node-resolve": "^5.2.0",
-        "rollup-plugin-terser": "^5.2.0"
-    }
+  "name": "sstnbl",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Tiny & sustainable web starter base on 11ty that focus on reducing footprint as mauch as possible.",
+  "scripts": {
+    "js:esmbuild": "BABEL_ENV=esm rollup --config",
+    "js:iifebuild": "BABEL_ENV=iife rollup --config",
+    "js:build": "npm run js:esmbuild && npm run js:iifebuild",
+    "js:watch": "BABEL_ENV=esm rollup --config --watch",
+    "e11:watch": "eleventy --watch",
+    "e11:serve": "eleventy --serve",
+    "e11:debug": "DEBUG=* eleventy",
+    "start": "concurrently \"yarn js:watch\"  \"yarn e11:serve\"",
+    "build": "eleventy && yarn js:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bastou/stnbl"
+  },
+  "author": {
+    "name": "Bastien Cornier",
+    "email": "bastiencornier@gmail.com",
+    "url": "https://bastiencornier.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/Bastou/stnbl/issues"
+  },
+  "homepage": "https://github.com/Bastou/stnbl#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-navigation": "^0.1.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "concurrently": "^5.1.0",
+    "eleventy-plugin-pwa": "^1.0.8",
+    "luxon": "^1.21.3",
+    "markdown-it": "^8.4.2",
+    "rollup": "^1.32.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.2.0"
+  }
 }
