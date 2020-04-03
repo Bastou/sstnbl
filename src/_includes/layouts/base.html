@@ -17,22 +17,13 @@
           .serviceWorker
           .register("/service-worker.js");
     </script>
+    
   </head>
   <body>
     <header>
       <h1>
-        <a href="{{ '/' | url }}">{{ metadata.title }}
-          <span class="mid">●</span></a>
+        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
       </h1>
-      <aside class="s m">
-        <nav>
-          <ul class="x lsn">
-            {{ nav.default((collections.all | eleventyNavigation), page, showDate=true) }}
-            <li><a href="{{ '/sustainable-checklist.html' | url }}">Checklist</a></li>
-            <li><a href="https://github.com/Bastou/sstnbl">Github</a></li>
-          </ul>
-        </nav>
-      </aside>
     </header>
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}

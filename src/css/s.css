@@ -6,10 +6,10 @@
 }
 body {
   margin: 0 auto;
-  padding: 3.3em 1.6em;
+  padding: 6% 1.5em 1.6em;
   max-width: 64ch;
-  font: 20px/1.6 sans-serif;
-  background: #f5eedc;
+  font: 12px/1.6 sans-serif;
+  background: #fff;
 }
 body,
 a {
@@ -20,7 +20,8 @@ a {
 a:focus,
 a:hover {
   background: #222;
-  color: #f5eedc;
+  color: #fff;
+  cursor: pointer;
 }
 .lsn {
   list-style: none;
@@ -29,7 +30,8 @@ a:hover {
   font-size: 0.8em;
 }
 h1 {
-  margin: 0 0 0.6em;
+  font-size: 1.8em;
+  margin: 0 0 0.5em;
 }
 h1 > a {
   text-decoration: none;
@@ -41,13 +43,13 @@ h2 {
   margin: 0 0 2.6rem;
 }
 main > * {
-  margin: 0 0 1.3rem;
+  margin: 0 0 1.2rem;
 }
 img {
   width: 100%;
 }
 h2, h3 {
-  margin: 1.5em 0 1.3rem;
+  margin: 1.5em 0 1.2rem;
 }
 .p {
   image-rendering: crisp-edges;
@@ -74,4 +76,18 @@ h2, h3 {
 }
 .sm {
   font-size: smaller;
+}
+#s {
+  margin: 0 0 .65rem;
+  height: 0;
+  padding-bottom: 100%;
+  cursor: pointer;
+}
+#s > canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+.td {
+  text-align: center;
+  margin: 0 0 1.6rem;
 }

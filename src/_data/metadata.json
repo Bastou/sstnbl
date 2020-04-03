@@ -1,10 +1,10 @@
 {
-  "title": "sstnbl",
-  "shortTitle": "sstnbl",
+  "title": "Rhizophora mangle",
+  "shortTitle": "Rhizophora",
   "url": "https://sstnbl.bastiencornier.com/",
-  "description": "Ultra Lightweight & Sustainable web starter base on 11ty that aim to reduce the website footprint from the start.",
+  "description": "Aperçu des futurs palétuviers qui peupleront les mangroves dans les siècles à venir par un générateur d'illustration d'arbre.",
   "feed": {
-    "subtitle": "Ultra Lightweight & Sustainable web starter base on 11ty that aim to reduce the website footprint from the start.",
+    "subtitle": "Aperçu des futurs palétuviers qui peupleront les mangroves dans les siècles à venir par un générateur d'illustration d'arbre.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://sstnbl.bastiencornier.com/"
