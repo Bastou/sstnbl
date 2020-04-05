@@ -8,7 +8,7 @@
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
     <meta name="author" content="{{ metadata.author.name }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-    <link rel="manifest" href="{{ '/manifest.webmanifest' | url }}">
+    <link rel="manifest" href="{{ '/manifest.webmanifest' | url }}" crossorigin="use-credentials">
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="{{ '/css/main.min.css' | url }}">
     <script>
@@ -19,7 +19,7 @@
     </script>
   </head>
   <body>
-    <header>
+    <header class="g">
       <h1>
         <a href="{{ '/' | url }}">{{ metadata.title }}
           <span class="mid">●</span></a>
@@ -28,8 +28,8 @@
         <nav>
           <ul class="x lsn">
             {{ nav.default((collections.all | eleventyNavigation), page, showDate=true) }}
-            <li><a href="{{ '/sustainable-checklist.html' | url }}">Checklist</a></li>
-            <li><a href="https://github.com/Bastou/sstnbl">Github</a></li>
+            <li><a href="{{ '/sustainable-checklist.html' | url }}" class="l">Checklist</a></li>
+            <li><a href="https://github.com/Bastou/sstnbl" class="l">Github</a></li>
           </ul>
         </nav>
       </aside>

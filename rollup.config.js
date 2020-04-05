@@ -7,9 +7,8 @@ import sourcemaps from "rollup-plugin-sourcemaps";
 
 const ROOT_DIST_PATH = "dist/";
 
-const plugins = [commonjs(), resolve(), babel(), terser(), sourcemaps()];
-
-const css = [cssPorter({ dest: ROOT_DIST_PATH + "/css/main.css" })];
+const css = cssPorter({ dest: ROOT_DIST_PATH + "/css/main.css" });
+const plugins = [commonjs(), resolve(), babel(), terser(), sourcemaps(), css];
 
 /**
  * Default ESM module for modern browsers
@@ -23,7 +22,7 @@ const esm = {
     name: "main",
     sourcemap: true,
   },
-  plugins: [...plugins, ...css],
+  plugins,
 };
 
 /**

@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+body {
+  margin: 0 auto;
+  padding: 3.3em 1.6em;
+  max-width: 64ch;
+  font: 20px/1.6 sans-serif;
+  background: #f5eedc;
+}
+body,
+a {
+  color: #222;
+}
 ::selection,
 .k,
 a:focus,
@@ -31,6 +48,18 @@ img {
 }
 h2, h3 {
   margin: 1.5em 0 1.3rem;
+}
+.g {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.x {
+  display: flex;
+}
+.l {
+  padding: 12px 10px 12px 10px;
+  display: inline-block;
 }
 .p {
   image-rendering: crisp-edges;
