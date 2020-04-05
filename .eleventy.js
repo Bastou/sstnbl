@@ -12,7 +12,7 @@ const pluginPWA = require("eleventy-plugin-pwa");
  * @param {*} eleventyConfig default config
  * @returns {Object} Parameters for generator
  */
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -29,14 +29,14 @@ module.exports = function(eleventyConfig) {
   // FILTERS
 
   // Setup readable date format
-  eleventyConfig.addFilter("readableDate", dateObj => {
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "dd LLL yyyy"
     );
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter("htmlDateString", dateObj => {
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
@@ -53,13 +53,12 @@ module.exports = function(eleventyConfig) {
 
   // define non-template static content directories to copy directly (for faster builds)
   eleventyConfig.addPassthroughCopy("./src/img");
-  eleventyConfig.addPassthroughCopy("./src/css");
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     files: ["dist/js"],
     callbacks: {
-      ready: function(err, browserSync) {
+      ready: function (err, browserSync) {
         const content_404 = fs.readFileSync("dist/404.html");
         console.log("process");
         browserSync.addMiddleware("*", (req, res) => {
@@ -67,8 +66,8 @@ module.exports = function(eleventyConfig) {
           res.write(content_404);
           res.end();
         });
-      }
-    }
+      },
+    },
   });
 
   // configuration options for eleventy builder
@@ -77,7 +76,7 @@ module.exports = function(eleventyConfig) {
     templateFormats: ["md", "njk", "html", "liquid", "json"],
     dir: {
       input: "src",
-      output: "dist"
-    }
+      output: "dist",
+    },
   };
 };
