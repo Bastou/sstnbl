@@ -3,10 +3,11 @@ import resolve from "rollup-plugin-node-resolve";
 import babel from "rollup-plugin-babel";
 import { terser } from "rollup-plugin-terser";
 import cssPorter from "rollup-plugin-css-porter";
+import sourcemaps from "rollup-plugin-sourcemaps";
 
 const ROOT_DIST_PATH = "dist/";
 
-const plugins = [commonjs(), resolve(), babel(), terser()];
+const plugins = [commonjs(), resolve(), babel(), terser(), sourcemaps()];
 
 const css = [cssPorter({ dest: ROOT_DIST_PATH + "/css/main.css" })];
 
@@ -19,6 +20,8 @@ const esm = {
   output: {
     format: "es",
     file: ROOT_DIST_PATH + "js/main.min.js",
+    name: "main",
+    sourcemap: true,
   },
   plugins: [...plugins, ...css],
 };
@@ -32,6 +35,7 @@ const iife = {
     format: "iife",
     file: ROOT_DIST_PATH + "js/main.iife.min.js",
     name: "main",
+    sourcemap: true,
   },
   plugins,
 };

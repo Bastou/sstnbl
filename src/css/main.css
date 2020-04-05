@@ -3,7 +3,8 @@
 a:focus,
 a:hover {
   background: #222;
-  color: #f5eedc;
+  color: #fff;
+  cursor: pointer;
 }
 .lsn {
   list-style: none;
@@ -12,7 +13,8 @@ a:hover {
   font-size: 0.8em;
 }
 h1 {
-  margin: 0 0 0.6em;
+  font-size: 1.8em;
+  margin: 0 0 0.5em;
 }
 h1 > a {
   text-decoration: none;
@@ -24,13 +26,13 @@ h2 {
   margin: 0 0 2.6rem;
 }
 main > * {
-  margin: 0 0 1.3rem;
+  margin: 0 0 1.2rem;
 }
 img {
   width: 100%;
 }
 h2, h3 {
-  margin: 1.5em 0 1.3rem;
+  margin: 1.5em 0 1.2rem;
 }
 .p {
   image-rendering: crisp-edges;
