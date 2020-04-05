@@ -2,7 +2,7 @@
 
 [WIP] Ultra Lightweight starter for helping build a more sustainable website and reduce its footprint. It's based on [11ty](https://github.com/11ty/eleventy).
 
-Note: It's mainly an experiment in minimalism, the goal os to provide just enough code to make a static website working. You need to adjust some things first before launching to production.
+Note: It's mainly a low-tech experiment, the goal is to provide just enough code to make a static website working. You need to adjust some things first before launching to production.
 
 ## Demo
 
