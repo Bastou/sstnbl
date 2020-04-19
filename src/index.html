@@ -5,7 +5,9 @@ eleventyNavigation:
   order: 1
 ---
 
-<img src="{{ '/img/banner.png' | url }}" alt="Storm King on the Hudson, 1866, Samuel Colman" />
+<p class="img">
+  <img src="{{ '/img/banner.png' | url }}" alt="Storm King on the Hudson, 1866, Samuel Colman" />
+</p>
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "components/postslist.html" %}

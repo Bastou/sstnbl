@@ -32,27 +32,30 @@ Specifically have a look at `.eleventy.js` to see if you want to configure any E
 npm install
 ```
 
-### 4. Edit _data/metadata.json
-
-### 5. Run Eleventy
-
+Install eleventy
 ```
 npm i -g eleventy
 ```
 
-Or build and host locally for local development
+### 4. Edit _data/metadata.json
+
+### 5. Run Project
+
+
+
+build and host locally for local development with watcher
 ```
-npm run serve
+npm run start
 ```
 
-Or build automatically when a template changes:
+build project
 ```
-npm run watch
+npm run build
 ```
 
-Or in debug mode:
+to debug:
 ```
-npm run debug
+npm run e11:debug
 ```
 
 ### Sustainable web checklist
