@@ -6,7 +6,8 @@ Note: It's mainly a low-tech experiment, the goal is to provide just enough code
 
 ## Demo
 
-* [Page](https://sstnbl.bastiencornier.com)
+[![demo sstnbl screenshot](./screenshot.jpg "Demo sstnbl screenshot")](https://sstnbl.bastiencornier.com)
+
 
 
 ## Getting Started

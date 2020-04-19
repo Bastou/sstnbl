@@ -94,5 +94,11 @@ h2, h3 {
   vertical-align: middle;
 }
 .sm {
-  font-size: smaller;
+  font-size: 0.7em;
+}
+.ei {
+  margin-bottom: 0;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
 }
