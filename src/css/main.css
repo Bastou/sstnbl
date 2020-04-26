@@ -43,11 +43,11 @@ h2 {
 main > * {
   margin: 0 0 1.3rem;
 }
+.img {
+  display: block;
+}
 .img, img {
   mix-blend-mode: multiply;
-}
-.img {
-  background: #f5eedc;
 }
 img {
   width: 100%;
