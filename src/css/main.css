@@ -102,3 +102,14 @@ h2, h3 {
   right: 10px;
   position: fixed;
 }
+table {
+  border-spacing: 0em;
+}
+th {
+  border-bottom: 2px solid currentColor;
+  padding: .5em;
+}
+td {
+  border-top: 1px solid currentColor;
+  padding: .5em;
+}
