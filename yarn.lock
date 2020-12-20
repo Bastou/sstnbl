@@ -5018,6 +5018,11 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
+p5@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/p5/-/p5-1.2.0.tgz#8495f926494bde7408b77701f0f30703f9c8a6c7"
+  integrity sha512-om9CSZXjw+BdC/u474nUtrVXAqeSRHNBDteDpIhQqgypziE+hh9BUc/YNl3RT5rX3kNtQlLes2S2sRqFU+S+JA==
+
 parse-filepath@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/parse-filepath/-/parse-filepath-1.0.2.tgz#a632127f53aaf3d15876f5872f3ffac763d6c891"

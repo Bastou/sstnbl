@@ -6,19 +6,21 @@ import cssPorter from "rollup-plugin-css-porter";
 import sourcemaps from "rollup-plugin-sourcemaps";
 
 const ROOT_DIST_PATH = "dist/";
-const PRODUCTION = false;
+const IS_PRODUCTION = process.env.BUILD === "production";
+
+console.log(("process.ENV", process.env.BUILD));
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 
 const css = cssPorter({
   dest: ROOT_DIST_PATH + "/css/main.css",
-  minified: PRODUCTION,
+  minified: IS_PRODUCTION,
 });
 const plugins = [
   resolve({ preferBuiltins: true, mainFields: ["browser"] }),
   commonjs({ ignoreGlobal: true, sourceMap: false }),
   babel({ extensions, exclude: "node_modules/**" }),
-  PRODUCTION && terser(),
+  IS_PRODUCTION && terser(),
   sourcemaps(),
   css,
 ];
@@ -29,7 +31,7 @@ const plugins = [
  */
 const esm = {
   input: "src/js/main.js",
-  treeshake: PRODUCTION,
+  treeshake: IS_PRODUCTION,
   output: {
     format: "es",
     file: ROOT_DIST_PATH + "js/main.min.js",
