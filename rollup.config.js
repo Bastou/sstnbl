@@ -6,9 +6,24 @@ import cssPorter from "rollup-plugin-css-porter";
 import sourcemaps from "rollup-plugin-sourcemaps";
 
 const ROOT_DIST_PATH = "dist/";
+const IS_PRODUCTION = process.env.BUILD === "production";
 
-const css = cssPorter({ dest: ROOT_DIST_PATH + "/css/main.css" });
-const plugins = [commonjs(), resolve(), babel(), terser(), sourcemaps(), css];
+console.log(("process.ENV", process.env.BUILD));
+
+const extensions = [".js", ".jsx", ".ts", ".tsx"];
+
+const css = cssPorter({
+  dest: ROOT_DIST_PATH + "/css/main.css",
+  minified: IS_PRODUCTION,
+});
+const plugins = [
+  resolve({ preferBuiltins: true, mainFields: ["browser"] }),
+  commonjs({ ignoreGlobal: true, sourceMap: false }),
+  babel({ extensions, exclude: "node_modules/**" }),
+  IS_PRODUCTION && terser(),
+  sourcemaps(),
+  css,
+];
 
 /**
  * Default ESM module for modern browsers
@@ -16,6 +31,7 @@ const plugins = [commonjs(), resolve(), babel(), terser(), sourcemaps(), css];
  */
 const esm = {
   input: "src/js/main.js",
+  treeshake: IS_PRODUCTION,
   output: {
     format: "es",
     file: ROOT_DIST_PATH + "js/main.min.js",
@@ -23,6 +39,9 @@ const esm = {
     sourcemap: true,
   },
   plugins,
+  watch: {
+    exclude: "node_modules/**",
+  },
 };
 
 /**
