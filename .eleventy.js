@@ -28,7 +28,7 @@ module.exports = function (eleventyConfig) {
     },
     images: {
       resize: {
-        min: 600, // Minimum width to resize an image to
+        min: 300, // Minimum width to resize an image to
         max: 1600, // Maximum width to resize an image to
         step: 200, // Width difference between each resized image
       },
