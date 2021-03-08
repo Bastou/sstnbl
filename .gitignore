@@ -10,3 +10,6 @@ yarn-error.log
 
 # OS
 .DS_Store
+
+# Tests
+tests/lighthouse/**

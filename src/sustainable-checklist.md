@@ -102,7 +102,8 @@ Checklist for helping a website sustainable design & development, mainly from [G
 | Servers            | Maximize the energy efficiency of servers                                          | 1        | 3         |
 | Servers            | Only install essential components on the server                                    | 1        | 3         |
 | Servers            | Only use in-memory caching                                                         | 1        | 3         |
-|                    | Store data in the cloud                                                            | 3        | 1         |
+| Servers            | Store data in the cloud                                                            | 3        | 1         |
+| Servers            | Use HTTP2                                                                          | 1        | 1         |
 | Servers            | Host CSS and JavaScript resources on a cookieless domain                           | 1        | 3         |
 | General            | Avoid redirections                                                                 | 1        | 3         |
 | General            | Do not generate 404 pages                                                          | 1        | 3         |

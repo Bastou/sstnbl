@@ -5,9 +5,11 @@ eleventyNavigation:
   order: 1
 ---
 
+
 <p class="img">
   <img src="{{ '/img/banner.png' | url }}" alt="Storm King on the Hudson, 1866, Samuel Colman " />
 </p>
+<p>This starter aims to be a guide to make static websites more sustainable. It's an experiment on how we can reduce our websites carbon footprint.</p>
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "components/postslist.html" %}
