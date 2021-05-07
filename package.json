@@ -4,8 +4,8 @@
   "license": "MIT",
   "description": "Tiny & sustainable web starter base on 11ty that focus on reducing footprint as mauch as possible.",
   "scripts": {
-    "start": "concurrently \"yarn js:watch\"  \"yarn e11:serve\"",
-    "build": "eleventy && yarn js:build",
+    "start": "concurrently \"npm run js:watch\"  \"npm run e11:serve\"",
+    "build": "eleventy && npm run js:build",
     "js:esmbuild": "BABEL_ENV=esm rollup --config --environment BUILD:production",
     "js:iifebuild": "BABEL_ENV=iife rollup --config --environment BUILD:production",
     "js:build": "npm run js:esmbuild && npm run js:iifebuild",
@@ -13,7 +13,7 @@
     "e11:watch": "eleventy --watch",
     "e11:serve": "eleventy --serve",
     "e11:debug": "DEBUG=* eleventy",
-    "budget:test": "lighthouse http://localhost:8080 --only-categories=performance --budget-path=budget.json --view --output-path=./tests/lighthouse/report.html"
+    "budget:test": "concurrently \"npm run js:build\" \"eleventy --serve --quiet\" \"( sleep 10 ; lighthouse http://localhost:8080 --only-categories=performance --budget-path=budget.json --view --output-path=./tests/lighthouse/report.html)\""
   },
   "repository": {
     "type": "git",

@@ -20,7 +20,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginPWA);
 
-  // images plugin
+  // Images plugin 
+  // For resizing and optimizing local images, and rewriting img tags to make use 
+  // of the responsive images
   eleventyConfig.addPlugin(pluginLocalRespimg, {
     folders: {
       source: "./src", // Folder images are stored in
@@ -28,17 +30,16 @@ module.exports = function (eleventyConfig) {
     },
     images: {
       resize: {
-        min: 400, // Minimum width to resize an image to
+        min: 300, // Minimum width to resize an image to
         max: 1600, // Maximum width to resize an image to
-        step: 200, // Width difference between each resized image
+        step: 300, // Width difference between each resized image
       },
       size: "100%",
       gifToVideo: false, // Convert GIFs to MP4 videos
       lazy: true, // Include `loading="lazy"` attribute for images
-      additional: [
-        // Globs of additional images to optimize (won't be resied)
-        "img/icons/*",
-      ],
+      webp: {
+        method: 6
+      }, // imagemin-webp options
     },
   });
 
