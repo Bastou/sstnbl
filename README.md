@@ -27,13 +27,13 @@ Specifically have a look at `.eleventy.js` to see if you want to configure any E
 ### 3. Install dependencies
 
 ```
-npm install
+yarn
 ```
 
 Install eleventy
 
 ```
-npm i -g eleventy
+yarn global add eleventy
 ```
 
 ### 4. Edit \_data/metadata.json
@@ -43,19 +43,19 @@ npm i -g eleventy
 build and host locally for local development with watcher
 
 ```
-npm run start
+yarn start
 ```
 
 build project
 
 ```
-npm run build
+yarn build
 ```
 
 to debug:
 
 ```
-npm run e11:debug
+yarn e11:debug
 ```
 
 ### Test website
@@ -63,7 +63,7 @@ npm run e11:debug
 The starter include a performance budget test with an automated lighthouse test :
 
 ```
-npm run budget:test
+yarn budget:test
 ```
 It will build the site and its assets and run a chrome instance on localhost:8080 to generate the report based on the budget config `./budget.json`.
 
