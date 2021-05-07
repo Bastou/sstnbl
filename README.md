@@ -58,6 +58,17 @@ to debug:
 npm run e11:debug
 ```
 
+### Test website
+
+The starter include a performance budget test with an automated lighthouse test :
+
+```
+npm run budget:test
+```
+It will build the site and its assets and run a chrome instance on localhost:8080 to generate the report based on the budget config `./budget.json`.
+
+You can also had the test in your [CI deploy scripts](https://github.com/GoogleChrome/lighthouse-ci) : 
+
 ### Sustainable web checklist
 
 - [Checklist](src/sustainable-checklist.md)
