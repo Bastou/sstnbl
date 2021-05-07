@@ -5,13 +5,36 @@ eleventyNavigation:
   order: 1
 ---
 
-
 <p class="img">
-  <img src="{{ '/img/banner.png' | url }}" alt="Storm King on the Hudson, 1866, Samuel Colman " />
+  <picture>
+    <source
+      srcset="
+        /img/banner.300.png   300w,
+        /img/banner.600.png   600w,
+        /img/banner.900.png   900w,
+        /img/banner.1024.png 1024w
+      "
+      sizes="90vw"
+      type="image/png"
+    />
+    <img
+      src="/img/banner.png"
+      alt="Storm King on the Hudson, 1866, Samuel Colman "
+      height="548"
+      width="1024"
+      loading="lazy"
+    />
+  </picture>
 </p>
-<p>This starter aims to be a guide to make static websites more sustainable. It's an experiment on how we can reduce our websites carbon footprint.</p>
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "components/postslist.html" %}
+<p>
+  This starter aims to be a guide to make static websites more sustainable. It's
+  an experiment on how we can reduce our websites carbon footprint.
+</p>
+{% set postslist = collections.posts | head(-3) %} {% set postslistCounter =
+collections.posts | length %} {% include "components/postslist.html" %}
 
-<a class="ei sm" href="http://www.ecoindex.fr/resultats/?id=72260">1.21 gCO2e</a>
+<a
+  class="ei sm"
+  href="https://www.websitecarbon.com/website/sstnbl-bastiencornier-com"
+  >0.11 gCO2e</a
+>
