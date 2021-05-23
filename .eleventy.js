@@ -77,6 +77,7 @@ module.exports = function (eleventyConfig) {
 
   // define non-template static content directories to copy directly (for faster builds)
   eleventyConfig.addPassthroughCopy("./src/img/icons");
+  eleventyConfig.addPassthroughCopy("./src/img/banner");
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({

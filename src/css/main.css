@@ -17,8 +17,8 @@ a {
 }
 ::selection,
 .k,
-a:focus,
-a:hover {
+a:not(.img):focus,
+a:not(.img):hover {
   background: #222;
   color: #f5eedc;
 }

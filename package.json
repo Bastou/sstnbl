@@ -13,7 +13,7 @@
     "e11:watch": "eleventy --watch",
     "e11:serve": "eleventy --serve",
     "e11:debug": "DEBUG=* eleventy",
-    "budget:test": "concurrently \"yarn js:build\" \"eleventy --serve --quiet\" \"( sleep 10 ; lighthouse http://localhost:8080 --only-categories=performance --budget-path=budget.json --view --output-path=./tests/lighthouse/report.html)\""
+    "budget": "concurrently \"yarn js:build\" \"eleventy --serve --quiet\" \"( sleep 10 ; lighthouse http://localhost:8080 --only-categories=performance --budget-path=budget.json --view --output-path=./tests/lighthouse/report.html)\""
   },
   "repository": {
     "type": "git",
@@ -29,24 +29,24 @@
   },
   "homepage": "https://github.com/Bastou/stnbl#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "@11ty/eleventy-navigation": "^0.1.3",
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.2.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@babel/core": "^7.8.6",
     "@babel/preset-env": "^7.8.6",
-    "concurrently": "^5.1.0",
-    "eleventy-plugin-local-respimg": "^0.2.0",
+    "concurrently": "^6.0.2",
+    "eleventy-plugin-local-respimg": "^0.4.0",
     "eleventy-plugin-pwa": "^1.0.8",
     "luxon": "^1.21.3",
-    "markdown-it": "^8.4.2",
-    "rollup": "^1.32.0",
+    "markdown-it": "^12.0.6",
+    "rollup": "^2.47.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-css-porter": "^1.0.2",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-sourcemaps": "^0.5.0",
-    "rollup-plugin-terser": "^5.2.0"
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {}
 }

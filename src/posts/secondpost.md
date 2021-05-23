@@ -14,4 +14,4 @@ This means that it will almost certainly be impossible to reduce greenhouse gas 
 
 <a href="{{ '/posts/firstpost/' | url }}">First post</a>
 
-The two main sources of low-carbon energy are renewables – which includes categories such as solar, wind, hydro, biomass and marine energy – and nuclear. In terms of total primary energy supply (i.e. raw energy created), data for 2008 suggest that fossil fuels provided around 85%, nuclear contributed around 2% and renewables provided around 13%.
+The two main sources of low-carbon energy are renewables – which includes categories such as solar, wind, hydro, biomass and marine energy – and nuclear. In terms of total primary energy supply (i.e. raw energy created), data for 2008 suggest that fossil fuels provided around **85**%, nuclear contributed around 2% and renewables provided around **13%**.
