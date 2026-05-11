@@ -99,5 +99,6 @@ You can also had the test in your [CI deploy scripts](https://github.com/GoogleC
 - [x] Add js with pwa
 - [x] Test feature phone
 - [x] Add page size budget management
+- [ ] Accessibility review and fix
 - [ ] https://web.dev/codelab-adapt-video-to-image-serving-based-on-network-quality/
 - [ ] Add html minifier : https://www.11ty.dev/docs/config/#transforms-example-minify-html-output
